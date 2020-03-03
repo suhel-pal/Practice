@@ -21,4 +21,35 @@ public class SingleLinkList {
 		this.head = new Node(data);
 	}
 
+	public void addNode(String data) {
+		if (this.head == null) {
+			this.head = new Node(data);
+		} else {
+			Node temp = getLastNode();
+			Node node = new Node(data);
+			temp.setLink(node);
+			temp = null;
+			node = null;
+		}
+
+	}
+
+	public void printElements() {
+		Node temp = this.head;
+		while (temp != null) {
+			System.out.print(temp.getData());
+			temp = temp.getLink();
+		}
+		System.out.println();
+	}
+
+	private Node getLastNode() {
+		Node temp = this.head;
+
+		while (temp.getLink() != null) {
+			temp = temp.getLink();
+		}
+		return temp;
+	}
+
 }
