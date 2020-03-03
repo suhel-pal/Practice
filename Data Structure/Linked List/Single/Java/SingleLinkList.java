@@ -10,8 +10,7 @@ public class SingleLinkList {
 
 	public SingleLinkList(Node node) {
 		if (node != null) {
-			this.head.setData(node.getData());
-			this.head.setLink(node.getLink());
+			this.head = new Node(node.getData(),node.getLink());
 		} else {
 			throw new NullPointerException("Node used for initialize is null");
 		}
