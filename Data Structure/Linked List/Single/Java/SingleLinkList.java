@@ -31,7 +31,11 @@ public class SingleLinkList {
 			temp = null;
 			node = null;
 		}
+	}
 
+	public Node getHead() {
+		Node tempHead = this.head;
+		return tempHead;
 	}
 
 	public void printElements() {
