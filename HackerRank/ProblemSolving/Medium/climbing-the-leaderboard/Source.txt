@@ -1,0 +1,4 @@
+https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
+
+Thinks to learn:
+bisect module in python
